@@ -12,7 +12,7 @@ public class UniqueWordVocabulary {
         setList.add(word);
     }
 
-    int getWordsCount() {
+    public int getWordsCount() {
         return setList.size();
     }
 
