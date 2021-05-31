@@ -7,7 +7,8 @@ public class MagicBall {
 
 
     ArrayList<String> list = new ArrayList<>();
-    public void answer(){
+
+    public void getAnswer() {
         list.add("It is certain (Бесспорно)");
         list.add("It is decidedly so (Предрешено)");
         list.add("Without a doubt (Никаких сомнений)");
@@ -33,14 +34,12 @@ public class MagicBall {
         list.add("Very doubtful (Весьма сомнительно)");
 
 
-
         Random random = new Random();
         int i = random.nextInt(21);
         System.out.println(list.get(i));
 
 
     }
-
 
 
 }

@@ -4,7 +4,7 @@ public class CreditCard {
     private String number;
     private int pinCode;
     private double balance;
-    private double Limit;
+    private double limit;
     private double loanDebt;
 
     public double getBalance() {
@@ -16,11 +16,11 @@ public class CreditCard {
     }
 
     public double getLimit() {
-        return Limit;
+        return limit;
     }
 
     public void setLimit(double limit) {
-        Limit = limit;
+        limit = limit;
     }
 
     public double getLoanDebt() {
@@ -38,12 +38,13 @@ public class CreditCard {
 
     public void deposit(int pinCode, double summ) {
         if (this.pinCode != pinCode) {
-            System.out.println("Неверный пинкод");
+            System.out.println("Операция отклонена!!!. Неверный пинкод");
 
         } else if (this.balance >= 0) {
             this.balance = this.balance + summ;
             System.out.println(this.balance);
         } else if (this.balance < 0) {
+
 
         }
 
