@@ -1,4 +1,4 @@
-package UniqueWorldVocabulary;
+package HomeWork.UniqueWorldVocabulary;
 
 import java.util.HashSet;
 import java.util.Set;
