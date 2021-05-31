@@ -51,12 +51,21 @@ public class CreditCard {
 
     }
 
-    public void withdraw(int pinCode, double summ){
+    public void withdraw(int pinCode, double summ) {
         if (this.pinCode != pinCode) {
             System.out.println("Неверный пинкод");
-        } else if(summ<=this.balance){
-            this.balance=this.balance - summ;
+        } else if (summ <= balance) {
+            balance = balance - summ;
             System.out.println(this.getBalance());
+        } else if (balance < 0) {
+            if (limit * (-1) > loanDebt * (-1)) {
+                loanDebt = balance;
+                loanDebt = loanDebt - summ;
+
+            } else {
+                System.out.println("Недостаточно средств");
+            }
+
         }
 
     }
