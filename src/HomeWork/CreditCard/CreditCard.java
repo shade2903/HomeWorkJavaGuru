@@ -58,7 +58,7 @@ public class CreditCard {
             balance = balance - summ;
             System.out.println(this.getBalance());
         } else if (balance < 0) {
-            if (limit * (-1) > loanDebt * (-1)) {
+            if (limit  > loanDebt * (-1)&& limit > summ) {
                 loanDebt = balance;
                 loanDebt = loanDebt - summ;
 
